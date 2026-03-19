@@ -1,0 +1,43 @@
+#include <GL/glut.h>
+
+void Garisgaris(void) {
+  glClear(GL_COLOR_BUFFER_BIT);
+  glLineWidth(3.0f);
+
+  glBegin(GL_LINES);
+
+    glColor3f(1.0f, 0.0f, 0.0f);
+    glVertex3f(-0.8f, 0.5f, 0.0f);
+    glVertex3f(0.8f, 0.5f, 0.0f);
+
+    glColor3f(0.0f, 1.0f, 0.0f);
+    glVertex3f(-0.8f, -0.5f, 0.0f);
+    glVertex3f(0.8f, 0.2f, 0.0f);
+
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glVertex3f(0.0f, 0.8f, 0.0f);
+    glVertex3f(0.0f, -0.8f, 0.0f);
+
+    glColor3f(0.0f, 1.0f, 1.0f);
+    glVertex3f(-0.6f, 0.0f, 0.0f);
+    glVertex3f(0.6f, 0.0f, 0.0f);
+
+  glEnd();
+
+  glFlush();
+}
+
+int main(int argc, char *argv[]) {
+  glutInit(&argc, argv);
+  glutInitWindowSize(640, 480);
+
+  glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
+  glutCreateWindow("Gambar garis GL_LINES");
+
+  glutDisplayFunc(Garisgaris);
+
+  glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
+
+  glutMainLoop();
+  return 0;
+}
