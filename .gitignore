@@ -1,3 +1,13 @@
 *
 
 !.gitignore
+
+!Kubus_Berotasi/
+!Kubus_Berotasi/*
+
+!Lengan_Bergerak/
+!Lengan_Bergerak/*
+
+!Proyeksi/
+!Proyeksi/*
+
