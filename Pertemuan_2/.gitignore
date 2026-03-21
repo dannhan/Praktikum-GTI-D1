@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+
+!Rotasi/
+!Rotasi/*
+
+!Stack/
+!Stack/*
+
+!Translasi/
+!Translasi/*
+
+!Tugas/
+!Tugas/*
